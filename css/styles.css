@@ -202,25 +202,28 @@ a:hover {
 
 .destinations-grid{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  flex-direction: column;
 	width: 100%;
-
 }
 
-.destinations-grid img {
-	display: block;
-	height: 450px;
-	padding: 20px;
-	background-clip: content-box;
+/*Don't set image height... Istead set the image container height*/
+.destinations-grid-part-1 {
+  display: flex;
+  height: 50vh;
+}
+
+.destinations-grid-part-1 img {
+	width: 100%;
+	padding: 10px;
 	background-size: cover;
 	background-position: center;
 }
 
+/*60-40 looks better than 70-30... Change as you like ;)*/
 .small{
-	flex-basis: 30%;
+	flex-basis: 40%;
 }
 
 .large{
-	flex-basis: 70%;
+	flex-basis: 60%;
 }
