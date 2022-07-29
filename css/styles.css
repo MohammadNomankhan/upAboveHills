@@ -200,31 +200,47 @@ a:hover {
 	background-color: #3f51b5;
 }
 
-.destinations-grid{
+
+.destinations-grid {
+	width: 90%;
 	display: flex;
-  /*flex-direction: column;*/
-	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-/*Don't set image height... Istead set the image container height*/
-.destinations-grid-part-1 {
-  display: flex;
-  /*flex-wrap: wrap;*/
-  height: 50vh;
-}
-
-.destinations-grid-part-1 img {
-	width: 100%;
-	padding: 10px;
+.destinations-grid li {
+	list-style: none;
+	height: 350px;
+	padding: 1.5rem;
+	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
 }
 
-/*60-40 looks better than 70-30... Change as you like ;)*/
-.small{
+
+.destinations-1 {
+	background-image: url("../img/mountain1.jpg");
+}
+
+.destinations-2 {
+	background-image: url("../img/mountain2.jpg");
+	
+}
+
+.destinations-3 {
+	background-image: url("../img/mountain3.jpg");
+	
+}
+
+.destinations-4 {
+	background-image: url("../img/mountain4.jpg");
+	
+}
+
+.destinations-grid .small{
 	flex-basis: 30%;
 }
 
-.large{
+.destinations-grid .large{
 	flex-basis: 70%;
 }
